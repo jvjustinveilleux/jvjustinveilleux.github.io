@@ -1,0 +1,183 @@
+
+:root {
+    --DeepSpaceBlue: #13293d;
+    --BalticBlue: #006494;
+    --Cerulean: #247ba0;
+    --BellBlue: #1b98e0;
+    --TitaniumWhite: #e8f1f2;
+    --Peach: #fab95b;
+    --Black: #0f0b07;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--paletteWhite);
+    color: var(--Black);
+    text-align: start;
+}
+
+/* p {
+    background-color: blue;
+    border: 10px dashed red;
+    padding: 100px;
+    inline-spacing: 50px;
+
+} */
+
+
+.nav-list {
+    list-style-type: none; 
+    display: flex; 
+    flex-direction: row; 
+    gap: 2vw; 
+}
+
+.nav-list li {
+    flex: 1;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 5rem;
+    color: var(--DeepSpaceBlue);
+    text-align: center;
+
+
+    @media (width < 738px) {
+        font-size: 3rem;
+    }
+
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--BalticBlue);
+    text-align: center;
+
+    @media (width < 850px) {
+        font-size: 2rem;
+    }
+}
+
+li {
+color: var(--BellBlue);
+
+}
+
+
+a {
+    color: var(--Cerulean);
+}
+
+section {
+    text-align: start;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--Peach);
+}
+
+
+main ul {
+    list-style-type: circle;
+
+}
+
+
+
+header ul {
+    list-style-type: none;
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+
+
+.wrapper {
+    max-inline-size: 800px;
+    margin-inline: auto;
+
+}
+
+img.jvpic {
+    inline-size: 100%;
+}
+
+img.coinCounter {
+    inline-size: 100%;
+    
+}
+
+img.disneyPlus {
+    inline-size: 100%;
+}
+
+.card-container {
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-auto-columns: 40%; 
+    grid-column-gap: 2rem;  
+    
+    overflow-x: scroll; 
+
+    
+
+    margin-block: 20px; 
+
+    @media (800px <= width < 1200px) {  
+        grid-auto-columns: 60%;         
+    }
+
+    @media (width < 800px) {            
+        grid-auto-columns: 100%;        
+        grid-auto-flow: row;            
+        gap: 1rem;
+    }
+}
+
+.card h2 {
+    background-color: var(--Peach);
+    inline-size: max-content; /*  */
+    padding: 5px;
+    border-radius: 10px; /* curves the edges of the border/padding */
+}
+
+.card { /* style each card */
+    background-color: var(--Peach); 
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 20px; /* curves the edges of the border/padding */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

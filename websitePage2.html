@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="The Second Section of Justin Veilleux's Personal Website, showcasing his other school projects" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Justin W Veilleux - Other Projects</title>
+
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="websiteIndex.html">Home</a></li>
+                        <li><a href="websitePage2.html">My Other Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1>My Projects</h1>
+
+                <p>On this page, I will show you two of my projects that I have done for my classes. The two projects I worked on are the following:</p>
+                <ul>
+                    <li>A Coin Counter from photographs, made in C++</li>
+                    <li>A Data Analytics research project about machine learning and Disney+</li>
+                </ul>
+
+                <h2> C++ Coin Counter</h2>
+                <p>In the class <span><em>Image Processing and Computer Vision</em></span>, we had us assigned a final project of which we had free will to make anything with the methods we had learned throughout the semester</p>
+                <p> I ended up with an idea to create a program that could be given photos of coins, and subsequently count them and calculate their total value.</p>
+                <div style="text-align: center;">
+                    <img class="coinCounterPic" src="media/coinCounter.png" alt="A birds-eye view photo of various coins scattered on a white desk, which acts as the backdrop. In the photo there are the four main coins: pennies, nickels, dimes, and quarters. The pennies are surrounded by green boxes, indicating that they are being found and counted by the program"/>
+                </div>
+
+                <p> The program takes a photo, such as the one shown above, and would use four sub-algorithms to count the coins in this order:</p>
+                
+                <div class="card-container">
+                    <section class="card">
+                        <h2>Pennies</h2>
+                            <p>The program searched for pennies first, and this was the easiest coin to find. I simply used a small algorithm to search for objects based on color.</p>
+                            <p>Using a copper penny colored filer, the program was able to isolate and count all the pennies in the image.</p>
+                    </section>
+                    <section class="card">
+                        <h2>Dimes</h2>
+                            <p>Next, the program looked for all of the dimes. Dimes was second easiest, because of their uniquely small size.</p>
+                            <p>Using a size filter, dimes were isolated and counted.</p>
+                    </section>
+                    <section class="card">
+                        <h2>Nickels</h2>
+                            <p>Nickels were up next, but I had some trouble figuring our how to get the program to differentiate them from the quarters.</p>
+                            <p>Eventually I noticed that nickels would be found without quarters but quarters would never be found without nickels.</p>
+                            <p>What I ended up trying was locating all of the nickels, and then placing a black box cover on top of them so that quarters would have no issues being found.</p>                   
+                    </section>
+                    <section class="card">
+                        <h2>Quarters</h2>
+                            <p>Finally, the program searched for quarters. I simply used a size filter and a color filter to search for the last possible coins in the image.</p>
+                            <p>Recall that nickels are now blurred out, so this part was a real breeze to accomplish.</p>
+                    </section>
+                </div>
+
+
+
+
+
+                <p> Following this, the program would then calculate the total value of all the values attained from the previous steps, and return the dollar amount onto the image.</p>
+
+
+                <h2> Disney+ Data Analytics Research Project</h2>
+                <p> In the class <span><em>Intro to Data Analytics</em></span>, my group and I were assigned a starting topic and article to create a report and powerpoint presentation for.</p>
+                <p> We were researching Disney+ and machine learning, more specifically, how Disney had aspirations to create Disney+ to establish a presence in the streaming market with the use of machine learning algorithms.</p>
+
+                <div style="text-align: center;">
+                    <img class="disneyPlus" src="media/slide.png" alt="A screenshot of a slide from the powerpoint presentation, it has text and a tree structure with how Disney's machine learning works. The text, in essence, states that 
+                    machine learning and feedback is what makes an algorithm successful, and that results include: higher viewer/subscriber retention, higher show renewal rate, and higher savings.
+                    The tree structure shows machine learning leads to data driven feedback, which leads to success: higher subscriber retention, renewal rate, and savings of over 1 billion dollars annually"/>
+                </div>
+
+                <p>Our research also included a lot of comparisons to the machine learning algorithms of Netflix, as they were the pioneers in the streaming space, and in a way still are.</p>
+                <p>Our researh concluded that while Disney needed to inplement a very advanced algorithm to rival other machine learning, it had to be done thoughtfully in order to avoid negative long-term effects, all while still making a steady and ethical profit.</p>
+
+            </main>
+            <footer>
+                <p>&copy;2026 Justin Veilleux</p>
+            </footer>
+        </div>
+    </body>
+</html>
+    

@@ -1,2 +1,1 @@
-# jvjustinveilleux.github.io
-personal website for Justin Veilleux, homework 1 for csc324
+This is a website for Justin Veilleux, a personal homework assignment for CSC324.
